@@ -16,6 +16,7 @@ const reviewRoutes = require('./routes/reviewRoutes');
 const viewRoutes = require('./routes/viewRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
 
+// Start express app
 const app = express();
 
 // Pug template tanımlama
