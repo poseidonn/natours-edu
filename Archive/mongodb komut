@@ -1,9 +1,0 @@
-> db.tours.find({ price : {$lt:500} , rating : {$gte : 4.8} }) lte=least than or equal, gte = greater than or equal
-> db.tours.find({ price : {$lte:500} })
-> db.tours.findOne({name:"Karadeniz Turu"})
-db.tours.find({ $or : [ { price: { $lt : 500 }}, { rating : { $gte:4.0 }}  ] }) or lt gte 
-db.tours.find({ $or : [ { price: { $gt : 21500 }}, { rating : { $gte:4.8 }},{name:1}  ] }) name=sadece name properties alanlarını getiriyor
-db.tours.updateOne({name: "Karadeniz Turu"} , { $set: {price:597} }) set ile koşula uyanları set ediyor
-> db.tours.updateMany({price: {$gt : 500 }, rating : {$gte : 4.8}} , { $set : { premium : true  }}) set ile koşula uyanları set ediyor
-> db.tours.deleteMany({rating : {$lt : 4.5}})
-
